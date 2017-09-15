@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Verticle: name.tianpo.websipder.Bot
+Main-Class: io.vertx.core.Launcher
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SourceCode-websipder.iml" filepath="$PROJECT_DIR$/.idea/modules/SourceCode-websipder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SourceCode-websipder_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SourceCode-websipder_main.iml" group="websipder" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SourceCode-websipder_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SourceCode-websipder_test.iml" group="websipder" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/websipder.iml" filepath="$PROJECT_DIR$/.idea/modules/websipder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/websipder_main.iml" filepath="$PROJECT_DIR$/.idea/modules/websipder_main.iml" group="websipder" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/websipder_test.iml" filepath="$PROJECT_DIR$/.idea/modules/websipder_test.iml" group="websipder" />
+    </modules>
+  </component>
+</project>
