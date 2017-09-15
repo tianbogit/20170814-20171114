@@ -1,0 +1,20 @@
+
+.input-group {
+    margin: 10px 0px;
+}
+
+h3 {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+li {
+    list-style-type: square;
+    margin: 10px 0;
+}
+
+em {
+    color: #c7254e;
+    font-style: inherit;
+    background-color: #f9f2f4;
+}
