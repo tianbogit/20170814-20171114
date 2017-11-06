@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.mauricio:postgresql-async_2.12:0.2.21">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mauricio/postgresql-async_2.12/0.2.21/d2cad1ea6e93600d4cd1fedfdc9f33f652f1832a/postgresql-async_2.12-0.2.21.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mauricio/postgresql-async_2.12/0.2.21/714d98c23a4124aeabfcf864b898ced54a8497a3/postgresql-async_2.12-0.2.21-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

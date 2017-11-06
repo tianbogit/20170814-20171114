@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.mauricio:mysql-async_2.12:0.2.21">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mauricio/mysql-async_2.12/0.2.21/e57132e67d5945a6e6cb467ba251514125d3e69f/mysql-async_2.12-0.2.21.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.mauricio/mysql-async_2.12/0.2.21/a692a2ac449790767dd2d63cd4e8d8a1ca740e06/mysql-async_2.12-0.2.21-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

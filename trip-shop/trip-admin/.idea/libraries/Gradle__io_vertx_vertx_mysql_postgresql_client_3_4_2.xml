@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.vertx:vertx-mysql-postgresql-client:3.4.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-mysql-postgresql-client/3.4.2/51afab46facd4f8ee6aa5bf916fd35bf702d8874/vertx-mysql-postgresql-client-3.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.vertx/vertx-mysql-postgresql-client/3.4.2/3852b9a0a201a193de474ee93cb368150955ce3e/vertx-mysql-postgresql-client-3.4.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

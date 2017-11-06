@@ -1,0 +1,89 @@
+group 'trip-admin'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext{
+        kotlin_version = '1.1.4-3'
+        shadow_version = '2.0.1'
+    }
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.github.jengelman.gradle.plugins:shadow:$shadow_version"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+apply plugin: 'application'
+apply plugin: "com.github.johnrengelman.shadow"
+
+sourceCompatibility = 1.8
+mainClassName = 'io.vertx.core.Launcher'
+
+def vertx_version= '3.4.2'
+def mainVerticleName = 'admin.trip.web.MainVerticle'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    //kt运行时环境
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8:$kotlin_version"
+    //vertx依赖
+    //核心
+    compile "io.vertx:vertx-core:$vertx_version"
+    //Web
+    compile "io.vertx:vertx-web:$vertx_version"
+    compile "io.vertx:vertx-sync:$vertx_version"
+    //模版
+    compile "io.vertx:vertx-web-templ-freemarker:$vertx_version"
+    //客户端
+    compile "io.vertx:vertx-jdbc-client:$vertx_version"
+    //数据库
+    compile "io.vertx:vertx-mysql-postgresql-client:$vertx_version"
+    compile "io.vertx:vertx-sql-common:$vertx_version"
+    compile 'org.slf4j:slf4j-api:1.5.8'
+    compile 'org.slf4j:slf4j-log4j12:1.5.8'
+    compile "io.vertx:vertx-service-proxy:$vertx_version"
+    compile "io.vertx:vertx-service-proxy:3.4.2:processor"
+    compile "io.vertx:vertx-lang-groovy:$vertx_version"
+    compileOnly "io.vertx:vertx-codegen:$vertx_version"
+    compile group: 'com.google.zxing', name: 'core', version: '3.3.0'
+    compile fileTree(dir:'lib',include:['*.jar'])
+    testCompile "junit:junit:4.12"
+    testCompile "io.vertx:vertx-unit:$vertx_version"
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+run {
+    args = ['run', mainVerticleName,
+            "--launcher-class=$mainClassName",
+            "--redeploy=src/**/*.*",
+            "--on-redeploy=./gradlew classes"
+    ]
+}
+
+shadowJar {
+    baseName = 'app'
+    classifier = 'shadow'
+
+    manifest {
+        attributes 'Main-Verticle': mainVerticleName
+    }
+    mergeServiceFiles {
+        include 'META-INF/services/io.vertx.core.spi.VerticleFactory'
+    }
+}
