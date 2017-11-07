@@ -10,8 +10,8 @@ import pymysql
 def dbHandle():
     conn = pymysql.connect(
         host='101.200.154.139',
-        user='root',
-        passwd='123456',
+        user='***',
+        passwd='***',
         charset='utf8',
         use_unicode=False
     )
