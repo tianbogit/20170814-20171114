@@ -10,6 +10,9 @@ import scrapy
 
 class DestItem(scrapy.Item):   
     Title = scrapy.Field()
-    Describe = scrapy.Field()
+    Remark = scrapy.Field()
+    Place = scrapy.Field()
+    Score = scrapy.Field()
+    TripType = scrapy.Field()
     BasePrice = scrapy.Field()
     ImgUrl = scrapy.Field()
